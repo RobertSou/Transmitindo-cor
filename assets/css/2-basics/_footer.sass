@@ -1,0 +1,76 @@
+#rodape
+  color: $marrom
+  width: 80%
+  margin: 20px auto 0 auto
+  #first_footer
+    display: grid
+    grid-template-columns: 1.5fr 2fr
+    align-items: center
+    border-top: 3px solid $amarelo
+    border-bottom: 3px solid $amarelo
+    padding: 20px 0
+    #social
+      display: flex
+      flex-direction: column
+      align-items: center
+      .icons
+        display: flex
+        .social
+          position: relative
+          display: block
+          width: 60px
+          height: 60px
+          margin: 0 7px
+          background-image: url(../img/bg-social.svg)
+          background-repeat: no-repeat
+          &:hover > img
+            fill: $amarelo
+            cursor: pointer
+          img
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 40%
+    #newslatter
+      width: 80%
+      display: flex
+      align-items: center
+      #flex
+        width: 50%
+        display: flex
+        flex-direction: column
+        input
+          width: 90%
+          background: none
+          border: 0
+          background-color: $white
+          border: 1px solid $marrom
+          margin: 5px 0
+          padding: 7px 7px
+          &::placeholder
+            color: $marrom
+      button
+        margin-top: 20px
+  #contato
+    margin-top: 10px
+    display: grid
+    grid-template-columns: 2fr 2fr 1fr
+    p
+      color: $cinza
+
+  #goTop
+    position: fixed
+    bottom: 2em
+    right: 2em
+    justify-self: end
+    width: 50px
+    height: 50px
+    background-image: url(../img/bg-social.svg)
+    background-repeat: no-repeat
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    img
+      width: 60%

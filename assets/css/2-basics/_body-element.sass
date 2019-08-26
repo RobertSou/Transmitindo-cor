@@ -1,0 +1,66 @@
+body
+  background-color: white
+  font-size: 14px
+  line-height: 1.6
+  font-family: 'Cabin', sans-serif
+  color: #666
+  -webkit-font-smoothing: antialiased
+  -webkit-text-size-adjust: 100%
+
+input[type=text]
+  outline: none
+
+#cabecalho-padrao
+  display: flex
+  align-items: center
+  h1
+    width: 20%
+    display: inline-block
+    font-size: 36px
+    text-align: center
+    background-color: $white
+    padding: 0px 30px
+    z-index: 3
+  #line
+    width: 40%
+    height: 3px
+    border-radius: 5px
+    background-color: $amarelo
+    z-index: 2
+
+.prod-padrao
+  .camisa-img
+    display: block
+    width: 200px
+    height: 280px
+    background-color: $gray
+    overflow: hidden
+    position: relative
+    img
+      position: absolute
+      left: -40%
+      width: 220%
+  span
+    margin: 7px 0
+  .comprar
+    display: block
+    width: 90%
+    background-color: $amarelo
+    border-radius: 60px
+    overflow: hidden
+    padding: 0
+    box-sizing: border-box
+    button
+      border-radius: none
+      padding: 0 16px 0 20px
+      background: none
+      color: $black
+      &:hover
+        transition: all 0.3s linear
+        background-color: $marrom
+    span
+      position: relative
+      padding: 15px 16px 15px 10px
+      margin-left: -5px
+      background-color: $darkgray
+      color: $white

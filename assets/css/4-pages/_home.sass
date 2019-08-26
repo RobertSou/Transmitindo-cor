@@ -1,0 +1,99 @@
+#hero
+  width: 80%
+  height: 450px
+  margin: 0 auto
+  box-sizing: border-box
+  overflow: hidden
+  position: relative
+  &::after
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    background-color: rgba(0, 0, 0, 0.7)
+    z-index: 5
+  #banner
+    width: 100%
+    height: 100%
+    position: relative
+    #img-1
+      transition: all 0.5s linear
+      position: absolute
+      left: 0%
+      display: block
+      width: 100%
+      height: 100%
+      background-image: url('../img/prod3.jpeg')
+      background-size: cover
+      background-position: center 25%
+      background-repeat: no-repeat
+      z-index: 4
+    #img-2
+      transition: all 0.5s linear
+      position: absolute
+      left: -100%
+      display: block
+      width: 100%
+      height: 100%
+      background-image: url('../img/prod5.jpeg')
+      background-size: cover
+      background-position: center 20%
+      background-repeat: no-repeat
+      z-index: 2
+    #img-3
+      transition: all 0.5s linear
+      position: absolute
+      left: 100%
+      display: block
+      width: 100%
+      height: 100%
+      background-image: url('../img/prod6.jpeg')
+      background-size: cover
+      background-position: right 25%
+      background-repeat: no-repeat
+      z-index: 2
+  #pontos
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 2%
+    display: flex
+    z-index: 10
+    .dots
+      cursor: pointer
+      margin: 0 5px
+      width: 15px
+      height: 15px
+      border-radius: 50%
+      background-color: $gray
+    .selected
+      background-color: $white
+  #hero-text
+    z-index: 10
+    position: absolute
+    top: 30%
+    left: 10%
+    width: 50%
+    h3,p
+      color: $white
+
+
+main
+  #container
+    width: 80%
+    margin: 0 auto
+    section#destaques
+      article#destaque
+        display: flex
+        justify-content: center
+        *[class^="dest-"]
+          align-items: center
+          margin: 0 15px
+          display: flex
+          flex-direction: column
+        .dest-2
+          #img
+            img
+              left: -55%
